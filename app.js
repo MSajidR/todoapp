@@ -12,8 +12,14 @@ if(todoText.value.trim()){
    var listItemId = 'list-item' +todoList.childNodes.length;
     listItem.setAttribute('id', listItemId)
     
+  
+    
+   var sepr = document.createElement('span')
    var editBtn =document.createElement('button')
+   
+   var sepr2 = document.createElement('span')
    var deleteBtn =document.createElement('button')
+
 
    editBtn.innerText = "Edit"
    deleteBtn.innerText = "Delete"
@@ -30,12 +36,23 @@ deleteBtn.onclick = function(){
 
 listItem.innerText= todoText.value   
    todoList.appendChild(listItem)
+   listItem.appendChild(sepr2)
+   
    listItem.appendChild(editBtn)
+   listItem.appendChild(sepr)
    listItem.appendChild(deleteBtn)
 
 
-
     todoText.value = ""
+    editBtn.setAttribute('class', 'btn btn-primary')
+    deleteBtn.setAttribute('class', 'btn btn-danger')
+    sepr.setAttribute('class','sep')
+    sepr2.setAttribute('class','sep')
+
+
+
+
+
 }}
 
 
@@ -61,7 +78,7 @@ todoList.removeChild(listItemToDelet);
 
 
 function deleteAllTodos(){
-	todoList.removeChild(childNodes.length);
+	todoList.childNodes = [];
    
 
 

@@ -1,7 +1,32 @@
 
 *{
-    background-color:gray;
+    background-color:black;
     color: white
 }
 
 
+.input-text{
+    display: flex;
+    justify-content:center;
+    margin: 5px;
+    background-color: white;
+    color: red
+
+}
+.row{
+    display: flex;
+    justify-content:center !important;
+}
+.btn{
+    
+}
+.sep{
+    padding:  5px
+
+    
+}
+
+
+#list li{
+margin-top:1em
+}
