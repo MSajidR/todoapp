@@ -10,23 +10,41 @@
     justify-content:center;
     margin: 5px;
     background-color: white;
-    color: red
-
-}
+    color: red;
+    width: 40%;
+    font-size: 1.5em}
 .row{
     display: flex;
     justify-content:center !important;
 }
 .btn{
+    margin: 5px;
+    font-size: 2em;
+    height: 2.5em;
     
+
 }
+
 .sep{
-    padding:  5px
+    padding:  5px;
+}
 
-    
+.sep2{
+    padding: 5px
 }
 
 
-#list li{
-margin-top:1em
+
+#list{
+    margin: 3% 0 0 0 ;
+}
+
+#list div{
+    display: flex;
+    box-sizing: border-box !important;
+    font-size: 1.8em;
+    justify-content: flex-start;
+    display: block;
+    margin:1em 0  1em 0;
+    padding-left: 1em
 }
